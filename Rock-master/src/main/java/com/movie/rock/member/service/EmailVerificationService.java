@@ -99,6 +99,10 @@ public class EmailVerificationService {
     // 회원가입용 이메일 인증 코드 생성 및 발송
     @Transactional
     public void sendSignUpVerificationEmail(String email) {
+
+        // 기존 인증메일 삭제
+        emailVerificationRepository.deleteByEmail(email);
+
         String verificationCode = generateVerificationCode();
         EmailVerificationEntity verification = EmailVerificationEntity.builder()
                 .email(email)

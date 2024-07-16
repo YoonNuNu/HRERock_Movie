@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="html,css,js,img 삭제">
+    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/SignUpPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/EmailVerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/EmailVerificationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,12 +41,12 @@
     &quot;assignee&quot;: &quot;tmdxxn&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/tmdxxn/HRERock_Movie.git",
-    "accountId": "5328872d-af0a-4e7d-a12f-3ea2617fe460"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/tmdxxn/HRERock_Movie.git&quot;,
+    &quot;accountId&quot;: &quot;5328872d-af0a-4e7d-a12f-3ea2617fe460&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -57,29 +58,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.Rock-master 빌드.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.RockApplication.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Development/IdeaProjects/WorkSpace/MovieRock-master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Rock-master 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RockApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/IdeaProjects/WorkSpace/MovieRock-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Development\IdeaProjects\WorkSpace\MovieRock-master\Rock-master\src\main\java\com\movie\rock" />
@@ -115,7 +116,8 @@
       <workItem from="1721095472715" duration="378000" />
       <workItem from="1721095901653" duration="53000" />
       <workItem from="1721096308863" duration="96000" />
-      <workItem from="1721096417577" duration="4319000" />
+      <workItem from="1721096417577" duration="7716000" />
+      <workItem from="1721116542012" duration="2453000" />
     </task>
     <task id="LOCAL-00001" summary="리액트 추가">
       <option name="closed" value="true" />
@@ -149,7 +151,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721099935816</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="추가">
+      <option name="closed" value="true" />
+      <created>1721101062652</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1721101062652</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +170,7 @@
     <MESSAGE value="리액트 추가" />
     <MESSAGE value="누락된 회원관련 로직추가" />
     <MESSAGE value="html,css,js,img 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="html,css,js,img 삭제" />
+    <MESSAGE value="추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="추가" />
   </component>
 </project>

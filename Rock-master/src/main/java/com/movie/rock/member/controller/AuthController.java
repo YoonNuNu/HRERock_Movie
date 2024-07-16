@@ -76,20 +76,20 @@ public class AuthController {
         return ResponseEntity.ok(memberService.isUsernameExists(memId));
     }
 
-    // 회원가입 - 이메일 중복 체크
-    @GetMapping("/check-email")
-    public ResponseEntity<Boolean> checkEmail(@RequestParam String memEmail) {
-        return ResponseEntity.ok(memberService.isEmailExists(memEmail));
-    }
-
-    // 회원가입 - 이메일 인증 메일발송
-    @PostMapping("/send-verification-email")
-    public ResponseEntity<String> sendVerificationEmail(@RequestParam String memEmail) {
+    // 회원가입 - 이메일 중복 확인 및 인증메일 발송
+    @PostMapping("/check-and-send-verification")
+    public ResponseEntity<?> checkAndSendVerification(@RequestParam String memEmail) {
         try {
+            boolean isEmailExists = memberService.isEmailExists(memEmail);
+            if (isEmailExists) {
+                return ResponseEntity.badRequest().body("이미 사용 중인 이메일입니다.");
+            }
+
             memberService.sendSignUpVerificationEmail(memEmail);
-            return ResponseEntity.ok("인증 이메일이 전송되었습니다.");
+            return ResponseEntity.ok("인증 이메일이 발송되었습니다. 이메일을 확인해주세요.");
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                    .body("처리 중 오류가 발생했습니다: " + e.getMessage());
         }
     }
 
@@ -108,10 +108,20 @@ public class AuthController {
     @PostMapping("/signup")
     public ResponseEntity<String> signUp(@RequestBody SignupRequestDTO signupRequestDTO) {
         try {
+            // 아이디 중복 체크
+            if (memberService.isUsernameExists(signupRequestDTO.getMemId())) {
+                return ResponseEntity.badRequest().body("이미 존재하는 아이디입니다.");
+            }
+
+            // 이메일 중복 체크
+            if (memberService.isEmailExists(signupRequestDTO.getMemEmail())) {
+                return ResponseEntity.badRequest().body("이미 존재하는 이메일입니다.");
+            }
+
             memberService.registerNewMember(signupRequestDTO);
             return ResponseEntity.ok("회원가입이 완료되었습니다.");
         } catch (Exception e) {
-            return ResponseEntity.badRequest().body(e.getMessage());
+            return ResponseEntity.badRequest().body("회원가입 중 오류 발생: " + e.getMessage());
         }
     }
 
