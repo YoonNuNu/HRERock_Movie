@@ -1,4 +1,4 @@
-package com.movie.rock.file.data;
+package com.movie.rock.movie.file.data;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

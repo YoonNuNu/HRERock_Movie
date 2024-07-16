@@ -1,6 +1,6 @@
 package com.movie.rock.board.data;
 
-import com.movie.rock.file.data.BoardDetailsFileResponseDTO;
+import com.movie.rock.movie.file.data.BoardDetailsFileResponseDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

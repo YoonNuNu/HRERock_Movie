@@ -1,4 +1,4 @@
-package com.movie.rock.file.data;
+package com.movie.rock.movie.file.data;
 
 import lombok.Builder;
 import lombok.Getter;

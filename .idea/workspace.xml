@@ -5,47 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="리액트 추가">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/component/MemberInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/component/MemberInfo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/controller/AdminMemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/controller/AdminMemberController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/controller/BoardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/controller/BoardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardDetailsResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardDetailsResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/service/BoardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/service/BoardService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/OAuth2LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/OAuth2LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/controller/MemberViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/controller/MemberViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/AuthRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/AuthRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/AuthResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/AuthResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/EmailVerificationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/EmailVerificationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/EmailVerificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/EmailVerificationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/FindIdRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/FindIdRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/FindPasswordRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/FindPasswordRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/MemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/MemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/MemberEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/MemberEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/MemberInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/MemberInfoDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/MemberRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/PasswordResetTokenDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/PasswordResetTokenDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/PasswordResetTokenEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/PasswordResetTokenEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/PasswordResetTokenRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/PasswordResetTokenRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/RoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/RoleEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/SignupRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/SignupRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/UpdateMemberDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/UpdateMemberDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/UpdatePasswordDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/data/UpdatePasswordDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/CustomOAuth2UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/service/CustomOAuth2UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/service/CustomUserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/CustomUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/service/CustomUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/EmailVerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/service/EmailVerificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/member/service/MemberService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/controller/MovieDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/controller/MovieDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/controller/MovieReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/controller/MovieReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MovieFavorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MovieFavorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MovieReviewEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MovieReviewEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/response/MovieReviewResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/response/MovieReviewResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieFavorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieFavorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieReviewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieReviewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieReviewServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieReviewServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/controller/BoardFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/controller/BoardFileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardDetailsFileResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardDetailsFileResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileDownloadResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileDownloadResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileUploadResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileUploadResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/service/BoardFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/service/BoardFileService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,17 +47,17 @@
     &quot;assignee&quot;: &quot;tmdxxn&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/tmdxxn/HRERock.git&quot;,
-    &quot;accountId&quot;: &quot;5328872d-af0a-4e7d-a12f-3ea2617fe460&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/tmdxxn/HRERock_Movie.git",
+    "accountId": "5328872d-af0a-4e7d-a12f-3ea2617fe460"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2jJA86twEdvvSowWCgRccmiYSew" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -147,6 +116,7 @@
       <workItem from="1721095472715" duration="378000" />
       <workItem from="1721095901653" duration="53000" />
       <workItem from="1721096308863" duration="96000" />
+      <workItem from="1721096417577" duration="385000" />
     </task>
     <task id="LOCAL-00001" summary="리액트 추가">
       <option name="closed" value="true" />
