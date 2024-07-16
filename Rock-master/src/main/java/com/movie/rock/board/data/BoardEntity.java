@@ -2,7 +2,7 @@ package com.movie.rock.board.data;
 
 import com.movie.rock.common.BaseTimeEntity;
 import com.movie.rock.member.data.MemberEntity;
-import com.movie.rock.movie.file.data.BoardFileEntity;
+import com.movie.rock.file.data.BoardFileEntity;
 import jakarta.persistence.*;
 import lombok.Builder;
 import lombok.Getter;

@@ -1,8 +1,8 @@
-package com.movie.rock.movie.file.controller;
+package com.movie.rock.file.controller;
 
-import com.movie.rock.movie.file.data.BoardFileDownloadResponseDTO;
-import com.movie.rock.movie.file.data.BoardFileUploadResponseDTO;
-import com.movie.rock.movie.file.service.BoardFileService;
+import com.movie.rock.file.data.BoardFileDownloadResponseDTO;
+import com.movie.rock.file.data.BoardFileUploadResponseDTO;
+import com.movie.rock.file.service.BoardFileService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
