@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
 import "../../common/css/WithdrawMember.css"
 import WithdrawModal from "../component/WithdrawModal"

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import "../../common/css/WithdrawModal.css"
 
 function WithdrawModal({ onClose }) {

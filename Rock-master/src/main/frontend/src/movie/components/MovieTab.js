@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
+
 // import './App.css'; // 필요한 스타일 파일을 import 합니다.
 
 function MovieTab() {

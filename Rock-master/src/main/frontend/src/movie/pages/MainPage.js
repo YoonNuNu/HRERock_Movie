@@ -12,7 +12,6 @@ import UpdatedMovie from '../components/UpdatedMovie';
 import "../../common/css/MainPage.css";
 
 
-
 function MainPage() {
 
 

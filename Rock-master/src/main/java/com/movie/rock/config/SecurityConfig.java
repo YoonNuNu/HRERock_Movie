@@ -1,7 +1,7 @@
 package com.movie.rock.config;
 
-import com.movie.rock.admin.member.service.CustomOAuth2UserService;
-import com.movie.rock.admin.member.service.CustomUserDetailsService;
+import com.movie.rock.member.service.CustomOAuth2UserService;
+import com.movie.rock.member.service.CustomUserDetailsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

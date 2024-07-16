@@ -1,15 +1,14 @@
 package com.movie.rock.board.service;
 
-import com.movie.rock.common.ResourceNotFoundException;
 import com.movie.rock.board.data.*;
-import com.movie.rock.admin.member.data.MemberRepository;
+import com.movie.rock.common.ResourceNotFoundException;
+import com.movie.rock.member.data.MemberRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 
 import java.util.List;
 import java.util.stream.Collectors;

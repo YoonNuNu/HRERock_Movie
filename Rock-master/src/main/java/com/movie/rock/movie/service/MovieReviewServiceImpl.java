@@ -1,9 +1,8 @@
 package com.movie.rock.movie.service;
 
-import com.movie.rock.common.MovieException.ReviewNotFoundException;
-import com.movie.rock.admin.member.data.MemberEntity;
-import com.movie.rock.admin.member.data.MemberRepository;
-import com.movie.rock.admin.member.data.RoleEnum;
+import com.movie.rock.member.data.MemberEntity;
+import com.movie.rock.member.data.MemberRepository;
+import com.movie.rock.member.data.RoleEnum;
 import com.movie.rock.movie.data.entity.MovieEntity;
 import com.movie.rock.movie.data.entity.MovieReviewEntity;
 import com.movie.rock.movie.data.repository.MovieRepository;

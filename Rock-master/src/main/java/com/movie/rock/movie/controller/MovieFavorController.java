@@ -2,10 +2,8 @@ package com.movie.rock.movie.controller;
 
 import com.movie.rock.movie.data.request.MovieFavorRequestDTO;
 import com.movie.rock.movie.data.response.MovieFavorResponseDTO;
-import com.movie.rock.movie.service.MovieFavorService;
 import com.movie.rock.movie.service.MovieFavorServiceImpl;
 import lombok.RequiredArgsConstructor;
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;

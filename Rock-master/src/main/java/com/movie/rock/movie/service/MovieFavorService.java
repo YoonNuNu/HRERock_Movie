@@ -1,6 +1,5 @@
 package com.movie.rock.movie.service;
 
-import com.movie.rock.movie.data.entity.MovieFavorEntity;
 import com.movie.rock.movie.data.request.MovieFavorRequestDTO;
 import com.movie.rock.movie.data.response.MovieFavorResponseDTO;
 

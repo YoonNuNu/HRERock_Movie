@@ -2,8 +2,6 @@ import React from 'react';
 import '../../common/css/SignUp.css';
 
 
-
-
 function SignUp() {
 
 

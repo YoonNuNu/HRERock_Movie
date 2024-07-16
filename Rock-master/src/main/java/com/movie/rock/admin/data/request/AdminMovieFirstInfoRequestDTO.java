@@ -2,7 +2,9 @@ package com.movie.rock.admin.data.request;
 
 
 import com.movie.rock.movie.data.entity.*;
-import com.movie.rock.movie.data.response.MovieInfoResponseDTO.*;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO.ActorResponseDTO;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO.DirectorResponseDTO;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO.GenreResponseDTO;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,7 +1,7 @@
 package com.movie.rock.movie.controller;
 
 import com.movie.rock.common.MovieException.UnauthorizedAccessException;
-import com.movie.rock.admin.member.service.CustomUserDetails;
+import com.movie.rock.member.service.CustomUserDetails;
 import com.movie.rock.movie.data.response.MovieDetailResponseDTO;
 import com.movie.rock.movie.service.MovieDetailServiceImpl;
 import lombok.RequiredArgsConstructor;

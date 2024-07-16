@@ -1,7 +1,7 @@
 package com.movie.rock.movie.data.entity;
 
 import com.movie.rock.common.BaseTimeEntity;
-import com.movie.rock.admin.member.data.MemberEntity;
+import com.movie.rock.member.data.MemberEntity;
 import com.movie.rock.movie.data.request.MovieReviewRequestDTO;
 import jakarta.persistence.*;
 import lombok.Builder;

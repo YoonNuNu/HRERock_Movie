@@ -1,8 +1,8 @@
 package com.movie.rock.movie.controller;
 
-import com.movie.rock.admin.member.data.MemberEntity;
-import com.movie.rock.admin.member.data.MemberRepository;
-import com.movie.rock.admin.member.service.CustomUserDetails;
+import com.movie.rock.member.data.MemberEntity;
+import com.movie.rock.member.data.MemberRepository;
+import com.movie.rock.member.service.CustomUserDetails;
 import com.movie.rock.movie.data.request.MovieReviewRequestDTO;
 import com.movie.rock.movie.data.response.MovieReviewPageResponseDTO;
 import com.movie.rock.movie.data.response.MovieReviewResponseDTO;

@@ -1,8 +1,8 @@
 package com.movie.rock.movie.service;
 
 import com.movie.rock.common.MovieException.MovieNotFoundException;
-import com.movie.rock.movie.data.entity.*;
-import com.movie.rock.movie.data.repository.*;
+import com.movie.rock.movie.data.entity.MovieEntity;
+import com.movie.rock.movie.data.repository.MovieRepository;
 import com.movie.rock.movie.data.response.MovieDetailResponseDTO;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

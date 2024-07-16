@@ -1,8 +1,8 @@
 package com.movie.rock.member.service;
 
+import com.movie.rock.config.JwtUtil;
 import com.movie.rock.member.data.MemberEntity;
 import com.movie.rock.member.data.MemberRepository;
-import com.movie.rock.config.JwtUtil;
 import com.movie.rock.member.data.RoleEnum;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;

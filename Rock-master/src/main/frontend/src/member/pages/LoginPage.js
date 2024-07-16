@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import google_login from '../../common/img/google_login.png';
 
 // css
-import  '../../common/css/Login.css';
+import '../../common/css/Login.css';
 
 
 function LoginPage() {

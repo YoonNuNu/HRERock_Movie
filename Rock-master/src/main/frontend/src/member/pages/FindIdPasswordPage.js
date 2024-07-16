@@ -2,9 +2,6 @@ import React from 'react';
 import '../../common/css/FindIdPassword.css';
 
 
-
-
-
 function FindIdPassword() {
 
 

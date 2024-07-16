@@ -1,6 +1,6 @@
 import React from 'react';
 import LoginHeader from './LoginHeader';
-import { Outlet } from "react-router-dom"
+import {Outlet} from "react-router-dom"
 
 function LoginOutlet() {
     

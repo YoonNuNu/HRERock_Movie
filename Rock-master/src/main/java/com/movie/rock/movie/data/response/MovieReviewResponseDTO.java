@@ -1,6 +1,6 @@
 package com.movie.rock.movie.data.response;
 
-import com.movie.rock.admin.member.data.MemberEntity;
+import com.movie.rock.member.data.MemberEntity;
 import com.movie.rock.movie.data.entity.MovieReviewEntity;
 import lombok.Builder;
 import lombok.Getter;

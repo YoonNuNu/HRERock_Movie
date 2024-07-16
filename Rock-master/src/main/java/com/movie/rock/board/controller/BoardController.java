@@ -2,7 +2,7 @@ package com.movie.rock.board.controller;
 
 import com.movie.rock.board.data.*;
 import com.movie.rock.board.service.BoardService;
-import com.movie.rock.admin.member.data.MemberEntity;
+import com.movie.rock.member.data.MemberEntity;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;

@@ -1,9 +1,5 @@
 package com.movie.rock.common;
 
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-
 //예외처리 핸들러
 public class ResourceNotFoundException extends RuntimeException{
     //객체 직렬화 역직렬화

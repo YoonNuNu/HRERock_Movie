@@ -9,7 +9,6 @@ import '../css/CustomOutlet.css';
 import Header from './Header';
 
 
-
 function CustomerPage() {
 
 

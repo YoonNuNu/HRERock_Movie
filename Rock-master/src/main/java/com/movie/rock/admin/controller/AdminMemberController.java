@@ -1,7 +1,7 @@
 package com.movie.rock.admin.controller;
 
-import com.movie.rock.admin.member.data.MemberRepository;
-import com.movie.rock.admin.member.service.MemberService;
+import com.movie.rock.member.data.MemberRepository;
+import com.movie.rock.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
