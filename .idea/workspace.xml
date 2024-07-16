@@ -4,81 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="누락된 회원관련 로직추가">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="html,css,js,img 삭제">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardDetailsResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardDetailsResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/board/data/BoardEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/controller/BoardFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/controller/BoardFileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardDetailsFileResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardDetailsFileResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileDownloadResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileDownloadResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/data/BoardFileUploadResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/data/BoardFileUploadResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/file/service/BoardFileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/file/service/BoardFileService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/admin_main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/admin_member_list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/admin_movie_list.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/admin_movie_upload.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/findidpw.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/movie_page.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/movie_search.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/mypage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/notice.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/post_view.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/post_write.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/ranking.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/signup.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/test_version.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/test_version2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/test_version3.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/test_version4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/css/withdraw_member.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/bg.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/dune.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/google_login.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/half-life-3-pc-game-cover.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/harry.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/home.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/ring_actor01.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/ring_actor02.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/ring_actor03.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/ring_actor04.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/ring_actor05.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/img/the_ring_poster.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/change_password.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/movie_page.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/signup.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/test_version.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/test_version2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/test_version3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/test_version4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/static/js/withdraw_member.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/admin_Main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/admin_member_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/admin_movie_list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/admin_movie_upload.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/change_password.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/findidpw.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/movie-detail.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/movie_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/movie_search.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/mypage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/notice.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/post_view.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/post_write.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/ranking.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/signup.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/test_version.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/test_version2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/test_version3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/test_version4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/resources/templates/withdraw_member.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/SignUpPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,28 +57,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Rock-master 빌드.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.RockApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Development/IdeaProjects/WorkSpace/MovieRock-master&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.Rock-master 빌드.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.RockApplication.executor": "Debug",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Development/IdeaProjects/WorkSpace/MovieRock-master",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Development\IdeaProjects\WorkSpace\MovieRock-master\Rock-master\src\main\java\com\movie\rock" />
@@ -185,7 +115,7 @@
       <workItem from="1721095472715" duration="378000" />
       <workItem from="1721095901653" duration="53000" />
       <workItem from="1721096308863" duration="96000" />
-      <workItem from="1721096417577" duration="3245000" />
+      <workItem from="1721096417577" duration="4319000" />
     </task>
     <task id="LOCAL-00001" summary="리액트 추가">
       <option name="closed" value="true" />
@@ -211,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721097139899</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="html,css,js,img 삭제">
+      <option name="closed" value="true" />
+      <created>1721099935816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721099935816</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +159,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="리액트 추가" />
     <MESSAGE value="누락된 회원관련 로직추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="누락된 회원관련 로직추가" />
+    <MESSAGE value="html,css,js,img 삭제" />
+    <option name="LAST_COMMIT_MESSAGE" value="html,css,js,img 삭제" />
   </component>
 </project>
