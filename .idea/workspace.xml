@@ -4,35 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="추가">
-      <change afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieListSearchRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/response/AdminMovieDetailsResponseDTO.java" afterDir="false" />
+    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="회원 관련 80% 완료 ( 구글로그인, 관리자 회원관리 해야함)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/controller/AdminMovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/controller/AdminMovieController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/AdminMovieListRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/AdminMovieListRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminActorRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminActorRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieFirstInfoRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieFirstInfoRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieFirstInfoUpdateRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieFirstInfoUpdateRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieListRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieListRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieSecondInfoRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieSecondInfoRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieSecondInfoUpdateRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminMovieSecondInfoUpdateRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminPosterRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminPosterRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminTrailerRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/request/AdminTrailerRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/response/AdminMovieDetailResponseDTO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/response/AdminMovieFirstInfoResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/response/AdminMovieFirstInfoResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/response/AdminMovieSecondInfoResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/data/response/AdminMovieSecondInfoResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/service/AdminMovieService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/service/AdminMovieService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/service/AdminMovieServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/admin/service/AdminMovieServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/ActorsEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/ActorsEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/ActorsPhotosEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/ActorsPhotosEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/DirectorsPhotosEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/DirectorsPhotosEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MoviePostersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MoviePostersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MovieTrailersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/MovieTrailersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/PostersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/PostersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/TrailersEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/entity/TrailersEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/response/MovieDetailResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/response/MovieDetailResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/response/MovieInfoResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/data/response/MovieInfoResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieFavorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/movie/service/MovieFavorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/movie/pages/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/movie/pages/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/OAuth2LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/OAuth2LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,33 +65,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.Build Rock-master.executor": "Run",
-    "Gradle.Rock-master 빌드.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Spring Boot.RockApplication.executor": "Debug",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Development/IdeaProjects/WorkSpace/MovieRock-master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Rock-master 빌드.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RockApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Development/IdeaProjects/WorkSpace/MovieRock-master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\kwyoo\IdeaProjects\HRERock_Movie\Rock-master\src\main\resources" />
       <recent name="C:\Development\IdeaProjects\WorkSpace\MovieRock-master\Rock-master\src\main\java\com\movie\rock" />
     </key>
   </component>
@@ -132,8 +106,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -150,9 +124,11 @@
       <workItem from="1721095901653" duration="53000" />
       <workItem from="1721096308863" duration="96000" />
       <workItem from="1721096417577" duration="7716000" />
-      <workItem from="1721116542012" duration="2453000" />
-      <workItem from="1721185798730" duration="52000" />
-      <workItem from="1721185961909" duration="2039000" />
+      <workItem from="1721116542012" duration="6561000" />
+      <workItem from="1721130285259" duration="3047000" />
+      <workItem from="1721175370818" duration="7878000" />
+      <workItem from="1721183464148" duration="26000" />
+      <workItem from="1721185394391" duration="1972000" />
     </task>
     <task id="LOCAL-00001" summary="리액트 추가">
       <option name="closed" value="true" />
@@ -194,7 +170,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721101062652</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="회원가입 리액트 수정 및 이메일 중복&amp;인증메일 병합 (완)">
+      <option name="closed" value="true" />
+      <created>1721119502568</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721119502569</updated>
+    </task>
+    <task id="LOCAL-00007" summary="회원 관련 80% 완료 ( 구글로그인, 관리자 회원관리 해야함)">
+      <option name="closed" value="true" />
+      <created>1721186101456</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721186101456</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +198,8 @@
     <MESSAGE value="누락된 회원관련 로직추가" />
     <MESSAGE value="html,css,js,img 삭제" />
     <MESSAGE value="추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="추가" />
+    <MESSAGE value="회원가입 리액트 수정 및 이메일 중복&amp;인증메일 병합 (완)" />
+    <MESSAGE value="회원 관련 80% 완료 ( 구글로그인, 관리자 회원관리 해야함)" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원 관련 80% 완료 ( 구글로그인, 관리자 회원관리 해야함)" />
   </component>
 </project>

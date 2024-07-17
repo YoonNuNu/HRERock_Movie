@@ -23,7 +23,7 @@ public record CustomUserDetails(MemberEntity memberEntity) implements UserDetail
 
     @Override
     public String getUsername() {
-        return memberEntity.getMemName();
+        return memberEntity.getMemId();
     }
 
     public Long getMemNum() {

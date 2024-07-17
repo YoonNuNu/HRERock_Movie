@@ -14,6 +14,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
@@ -27,8 +28,12 @@ public class AuthController {
 
 
     private final CustomUserDetailsService userDetailsService;
+
     @Autowired
     private MemberRepository memberRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Autowired
     public AuthController(CustomUserDetailsService userDetailsService) {
@@ -133,7 +138,7 @@ public class AuthController {
         }
 
         String memId = authentication.getName();
-        MemberEntity member = memberService.findbyMemId(memId);
+        MemberEntity member = memberService.findByMemId(memId);
 
         if (member == null) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body("사용자를 찾지 못했습니다.");
@@ -150,8 +155,12 @@ public class AuthController {
 
         memberInfo.setMemRole(member.getMemRole());
 
-//        memberInfo.setMemTel(member.getMemTel());
-//        memberInfo.setMemId(member.getMemId());
+        memberInfo.setMemTel(member.getMemTel());
+
+        memberInfo.setMemId(member.getMemId());
+
+        memberInfo.setMemBirth(member.getMemBirth().toString());
+
 
         return ResponseEntity.ok(memberInfo);
     }
@@ -195,7 +204,7 @@ public class AuthController {
     // 아이디 찾기
     @PostMapping("/find-id")
     public ResponseEntity<String> findId(@RequestBody FindIdRequestDTO requestDTO) {
-        Optional<MemberEntity> member = memberService.findByMemId(requestDTO.getMemEmail(), requestDTO.getMemName());
+        Optional<MemberEntity> member = memberService.findMemId(requestDTO.getMemEmail(), requestDTO.getMemName());
         if (member.isPresent()) {
             return ResponseEntity.ok(member.get().getMemId());
         } else {
@@ -255,6 +264,25 @@ public class AuthController {
             }
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Error refreshing token");
+        }
+    }
+    @PostMapping("/verify-password")
+    public ResponseEntity<?> verifyPassword(Authentication authentication, @RequestBody PasswordVerificationRequest request) {
+        if (authentication == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("인증되지 않음");
+        }
+
+        String memId = authentication.getName();
+        MemberEntity member = memberService.findByMemId(memId);
+
+        if (member == null) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("사용자를 찾을 수 없습니다.");
+        }
+
+        if (passwordEncoder.matches(request.getMemPassword(), member.getMemPassword())) {
+            return ResponseEntity.ok().body(true);
+        } else {
+            return ResponseEntity.ok().body(false);
         }
     }
 }
