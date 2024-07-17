@@ -149,12 +149,12 @@ public class MemberService {
     }
 
     // 아이디 찾기 로직
-    public Optional<MemberEntity> findByMemId(String memEmail, String memName) {
+    public Optional<MemberEntity> findMemId(String memEmail, String memName) {
         return memberRepository.findByMemEmailAndMemName(memEmail, memName);
     }
 
     // 헤더에 정보를 넣기 위한 메서드
-    public MemberEntity findbyMemId(String memId) {
+    public MemberEntity findByMemId(String memId) {
         return memberRepository.findByMemId(memId).orElse(null);
     }
 
@@ -205,7 +205,7 @@ public class MemberService {
     public void sendPasswordResetEmail(String email, String token) {
         try {
             String subject = "Rock 비밀번호 재설정";
-            String confirmationUrl = "http://localhost:8080/auth/reset-password?token=" + token;
+            String confirmationUrl = "http://localhost:3000/user/ChangePassword?token=" + token;
             String message = "<p>안녕하세요,</p>" +
                     "<p>비밀번호를 재설정하려면 아래 링크를 클릭하세요:</p>" +
                     "<a href=\"" + confirmationUrl + "\">비밀번호 재설정</a>" +

@@ -4,11 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="추가">
+    <list default="true" id="ac9c11db-f9eb-4ff9-93cb-bb9ce4e5172a" name="변경" comment="회원가입 리액트 수정 및 이메일 중복&amp;인증메일 병합 (완)">
+      <change afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/PasswordVerificationRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/administrator/admin/pages/AdminNoticeListPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/administrator/admin/pages/AdminNoticeListPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/common/pages/AdminOutlet.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/common/pages/AdminOutlet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/component/MemberInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/component/MemberInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/component/WithdrawModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/component/WithdrawModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/ChangePassword.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/ChangePassword.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/FindIdPasswordPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/FindIdPasswordPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/LoginPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/LoginPage.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/SignUpPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/SignUpPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/WithdrawMember.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/member/pages/WithdrawMember.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/movie/pages/MainPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/frontend/src/movie/pages/MainPage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/MemberInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/data/MemberInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/CustomUserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/CustomUserDetails.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/EmailVerificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/EmailVerificationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Rock-master/src/main/java/com/movie/rock/member/service/MemberService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +45,13 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -117,7 +138,11 @@
       <workItem from="1721095901653" duration="53000" />
       <workItem from="1721096308863" duration="96000" />
       <workItem from="1721096417577" duration="7716000" />
-      <workItem from="1721116542012" duration="2453000" />
+      <workItem from="1721116542012" duration="6561000" />
+      <workItem from="1721130285259" duration="3047000" />
+      <workItem from="1721175370818" duration="7878000" />
+      <workItem from="1721183464148" duration="26000" />
+      <workItem from="1721185394391" duration="593000" />
     </task>
     <task id="LOCAL-00001" summary="리액트 추가">
       <option name="closed" value="true" />
@@ -159,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721101062652</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="회원가입 리액트 수정 및 이메일 중복&amp;인증메일 병합 (완)">
+      <option name="closed" value="true" />
+      <created>1721119502568</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721119502569</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +204,7 @@
     <MESSAGE value="누락된 회원관련 로직추가" />
     <MESSAGE value="html,css,js,img 삭제" />
     <MESSAGE value="추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="추가" />
+    <MESSAGE value="회원가입 리액트 수정 및 이메일 중복&amp;인증메일 병합 (완)" />
+    <option name="LAST_COMMIT_MESSAGE" value="회원가입 리액트 수정 및 이메일 중복&amp;인증메일 병합 (완)" />
   </component>
 </project>

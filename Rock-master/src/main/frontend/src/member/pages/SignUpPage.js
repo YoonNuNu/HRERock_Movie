@@ -193,6 +193,7 @@ function SignUp() {
                                className='commonpage'
                         placeholder={"8자 이상 대문자, 소문자, 숫자, 특수문자를 포함해야합니다"}/>
                     </div>
+                    {passwordError && <div className="error-message">{passwordError}</div>}
 
                     <div className='passwordcheck'>비밀번호 확인
                         <input type="password"
