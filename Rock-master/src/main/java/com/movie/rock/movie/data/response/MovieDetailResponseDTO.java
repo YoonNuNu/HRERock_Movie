@@ -1,7 +1,5 @@
 package com.movie.rock.movie.data.response;
 
-import com.movie.rock.movie.data.entity.ActorsPhotosEntity;
-import com.movie.rock.movie.data.entity.DirectorsPhotosEntity;
 import com.movie.rock.movie.data.entity.MovieEntity;
 import lombok.Builder;
 import lombok.Getter;
@@ -27,9 +25,9 @@ public class MovieDetailResponseDTO {
     private String movieRating;
     private String movieDescription;
     private List<ActorResponseDTO> actors;
-    private Map<Integer, Long> actorsPhotos;
+    private Map<Long, List<Long>> actorsPhotos;
     private List<DirectorResponseDTO> directors;
-    private Map<Integer, Long> directorsPhoto;
+    private Map<Long, List<Long>> directorsPhoto;
     private List<PosterResponseDTO> posters;
     private List<TrailerResponseDTO> trailers;
     private FilmResponseDTO movieFilm;
@@ -38,8 +36,8 @@ public class MovieDetailResponseDTO {
 
     @Builder
     public MovieDetailResponseDTO(Long movieId, String movieTitle, int runTime, Integer openYear, String movieRating, String movieDescription,
-                                  List<ActorResponseDTO> actors, Map<Integer, Long> actorsPhotos, List<DirectorResponseDTO> directors,
-                                  Map<Integer, Long> directorsPhoto, List<GenreResponseDTO> genres, List<PosterResponseDTO> posters,
+                                  List<ActorResponseDTO> actors, Map<Long, List<Long>> actorsPhotos, List<DirectorResponseDTO> directors,
+                                  Map<Long, List<Long>> directorsPhoto, List<GenreResponseDTO> genres, List<PosterResponseDTO> posters,
                                   List<TrailerResponseDTO> trailers, FilmResponseDTO movieFilm, List<MovieReviewResponseDTO> reviews, Long favorCount) {
         this.movieId = movieId;
         this.movieTitle = movieTitle;
@@ -75,20 +73,28 @@ public class MovieDetailResponseDTO {
                         .map(ma -> ActorResponseDTO.fromEntity(ma.getActor()))
                         .collect(Collectors.toList()))
                 .actorsPhotos(movie.getMovieActors().stream()
-                        .flatMap(ma -> ma.getActor().getActorPhotos().stream())
-                        .collect(Collectors.toMap(
-                                ap -> Math.toIntExact(ap.getActor().getActorId()),
-                                ActorsPhotosEntity::getActorPhotoId)))
+                        .flatMap(ap -> ap.getActor().getActorPhotos().stream())
+                        .filter(ap -> ap.getActor() != null && ap.getPhotos() != null)
+                        .collect(Collectors.groupingBy(
+                                ap -> ap.getActor().getActorId(),
+                                Collectors.mapping(ap -> ap.getPhotos().getPhotoId(), Collectors.toList())
+                        )))
                 .directors(movie.getMovieDirectors().stream()
                         .map(md -> DirectorResponseDTO.fromEntity(md.getDirector()))
                         .collect(Collectors.toList()))
                 .directorsPhoto(movie.getMovieDirectors().stream()
                         .flatMap(md -> md.getDirector().getDirectorPhotos().stream())
-                        .collect(Collectors.toMap(
-                                dp -> Math.toIntExact(dp.getDirector().getDirectorId()),
-                                DirectorsPhotosEntity::getDirectorPhotoId)))
-                .posters(movie.getPoster().stream().map(PosterResponseDTO::fromEntity).collect(Collectors.toList()))
-                .trailers(movie.getTrailer().stream().map(TrailerResponseDTO::fromEntity).collect(Collectors.toList()))
+                        .filter(dp -> dp.getDirector() != null && dp.getPhotos() != null)
+                        .collect(Collectors.groupingBy(
+                                dp -> dp.getDirector().getDirectorId(),
+                                Collectors.mapping(dp -> dp.getPhotos().getPhotoId(), Collectors.toList())
+                        )))
+                .posters(movie.getPoster().stream()
+                        .map(mp -> PosterResponseDTO.fromEntity(mp.getPosters()))
+                        .collect(Collectors.toList()))
+                .trailers(movie.getTrailer().stream()
+                        .map(mt -> TrailerResponseDTO.fromEntity(mt.getTrailers()))
+                        .collect(Collectors.toList()))
                 .movieFilm(FilmResponseDTO.fromEntity(movie.getMovieFilm()))
                 .reviews(movie.getReviews().stream()
                         .map(review -> MovieReviewResponseDTO.fromEntity(review, review.getMember()))

@@ -19,14 +19,9 @@ public class TrailersEntity {
     @Column(name = "trailer_url")
     private String trailerUrls;
 
-    @ManyToOne
-    @JoinColumn(name = "movie_id", referencedColumnName = "movie_id")
-    private MovieEntity movie;
-
     @Builder
-    public TrailersEntity(Long trailerId, String trailerUrls, MovieEntity movie) {
+    public TrailersEntity(Long trailerId, String trailerUrls) {
         this.trailerId = trailerId;
         this.trailerUrls = trailerUrls;
-        this.movie = movie;
     }
 }

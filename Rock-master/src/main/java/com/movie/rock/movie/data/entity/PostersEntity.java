@@ -24,9 +24,8 @@ public class PostersEntity {
     private MovieEntity movie;
 
     @Builder
-    public PostersEntity(Long posterId, String posterUrls, MovieEntity movie) {
+    public PostersEntity(Long posterId, String posterUrls) {
         this.posterId = posterId;
         this.posterUrls = posterUrls;
-        this.movie = movie;
     }
 }

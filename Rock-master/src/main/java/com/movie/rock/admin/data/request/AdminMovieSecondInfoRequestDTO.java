@@ -1,10 +1,8 @@
 package com.movie.rock.admin.data.request;
 
 
-import com.movie.rock.movie.data.entity.MovieEntity;
-import com.movie.rock.movie.data.entity.MovieFilmEntity;
-import com.movie.rock.movie.data.entity.MoviePostersEntity;
-import com.movie.rock.movie.data.entity.MovieTrailersEntity;
+import com.movie.rock.movie.data.entity.*;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO;
 import com.movie.rock.movie.data.response.MovieInfoResponseDTO.PosterResponseDTO;
 import com.movie.rock.movie.data.response.MovieInfoResponseDTO.TrailerResponseDTO;
 import lombok.Builder;
@@ -19,16 +17,16 @@ import java.util.stream.Collectors;
 public class AdminMovieSecondInfoRequestDTO {
     private Long movieId;
     private String movieTitle;
-    private List<TrailerResponseDTO> trailer;
+    private List<TrailersEntity> trailers;
     private MovieFilmEntity movieFilm;
-    private List<PosterResponseDTO> poster;
+    private List<PostersEntity> poster;
 
     //생성자
-    public AdminMovieSecondInfoRequestDTO(Long movieId,String movieTitle,List<TrailerResponseDTO> trailer,MovieFilmEntity movieFilm
-                                          ,List<PosterResponseDTO> poster){
+    public AdminMovieSecondInfoRequestDTO(Long movieId,String movieTitle,List<TrailersEntity> trailers,MovieFilmEntity movieFilm
+            ,List<PostersEntity> poster){
         this.movieId=movieId;
         this.movieTitle = movieTitle;
-        this.trailer = trailer;
+        this.trailers = trailers;
         this.movieFilm = movieFilm;
         this.poster = poster;
     }
@@ -39,17 +37,21 @@ public class AdminMovieSecondInfoRequestDTO {
         return MovieEntity.builder()
                 .movieId(adminMovieSecondInfoRequestDTO.getMovieId())
                 .movieTitle(adminMovieSecondInfoRequestDTO.getMovieTitle())
-                .trailer(adminMovieSecondInfoRequestDTO.getTrailer().stream()
-                        .map(trailerDto -> MovieTrailersEntity.builder()
-                                .trailerId(trailerDto.getTrailerId())
-                                .movie(trailerDto.getMovie())
+                .trailer(adminMovieSecondInfoRequestDTO.getTrailers().stream()
+                        .map(tr -> MovieTrailersEntity.builder()
+                                .trailers(TrailersEntity.builder()
+                                        .trailerId(tr.getTrailerId())
+                                        .trailerUrls(tr.getTrailerUrls())
+                                        .build())
                                 .build())
                         .collect(Collectors.toList()))
                 .movieFilm(adminMovieSecondInfoRequestDTO.getMovieFilm())
                 .poster(adminMovieSecondInfoRequestDTO.getPoster().stream()
                         .map(posterDto -> MoviePostersEntity.builder()
-                                .posterId(posterDto.getPosterId())
-                                .movie(posterDto.getMovie())
+                                .posters(PostersEntity.builder()
+                                        .posterId(posterDto.getPosterId())
+                                        .posterUrls(posterDto.getPosterUrls())
+                                        .build())
                                 .build())
                         .collect(Collectors.toList()))
                 .build();

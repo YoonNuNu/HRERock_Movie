@@ -26,7 +26,7 @@ public class AdminActorRequestDTO {
         this.actorBirth = actorBirth;
         this.actorPhotos = actorPhotos;
     }
-    
+
     //생성자에 넣을 데이터
     @Builder
     public static ActorsEntity ofEntity(AdminActorRequestDTO adminActorRequestDTO){

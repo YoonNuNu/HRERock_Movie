@@ -2,9 +2,7 @@ package com.movie.rock.admin.data.request;
 
 
 import com.movie.rock.movie.data.entity.*;
-import com.movie.rock.movie.data.response.MovieInfoResponseDTO.ActorResponseDTO;
-import com.movie.rock.movie.data.response.MovieInfoResponseDTO.DirectorResponseDTO;
-import com.movie.rock.movie.data.response.MovieInfoResponseDTO.GenreResponseDTO;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO.*;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -23,11 +21,13 @@ public class AdminMovieFirstInfoRequestDTO {
     private String movieRating;
     private String movieDescription;
     private List<ActorResponseDTO> movieActors;
+    //배우사진 추가
     private List<DirectorResponseDTO> movieDirectors;
+    //감독사진 추가
 
     //생성자
     public AdminMovieFirstInfoRequestDTO(Long movieId,String movieTitle,List<GenreResponseDTO> movieGenres
-    ,int runTime,Integer openYear,String movieRating,String movieDescription,List<ActorResponseDTO> movieActors,List<DirectorResponseDTO> movieDirectors){
+            ,int runTime,Integer openYear,String movieRating,String movieDescription,List<ActorResponseDTO> movieActors,List<DirectorResponseDTO> movieDirectors){
         this.movieId = movieId;
         this.movieTitle = movieTitle;
         this.movieGenres = movieGenres;

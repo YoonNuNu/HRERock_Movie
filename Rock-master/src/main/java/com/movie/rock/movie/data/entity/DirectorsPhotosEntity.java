@@ -2,35 +2,41 @@ package com.movie.rock.movie.data.entity;
 
 import com.movie.rock.common.MovieException;
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
+import lombok.*;
+
+import java.io.Serializable;
 
 @Entity
 @Getter
 @NoArgsConstructor
 @Table(name = "directors_photos")
+@IdClass(DirectorsPhotosEntity.DirectorsPhotosId.class)
 public class DirectorsPhotosEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "director_photo_id")
-    private Long directorPhotoId;
-
-    @ManyToOne
-    @JoinColumn(name = "photo_id", referencedColumnName = "photo_id")//중복 매핑 방지
-    private PhotosEntity photos;
-
-    @ManyToOne
-    @JoinColumn(name = "director_id", referencedColumnName = "director_id") //중복 매핑 방지
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "director_id", referencedColumnName = "director_id")
     private DirectorsEntity director;
 
+    @Id
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "photo_id", referencedColumnName = "photo_id")
+    private PhotosEntity photos;
+
     @Builder
-    public DirectorsPhotosEntity(PhotosEntity photos, DirectorsEntity director) {
-        this.photos = photos;
+    public DirectorsPhotosEntity(DirectorsEntity director, PhotosEntity photos) {
         this.director = director;
+        this.photos = photos;
         if(photos != null && photos.getPhotoType() != PhotoType.DIRECTOR) {
             throw new MovieException.InvalidDirectorPhotoTypeException();
         }
+    }
+
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public static class DirectorsPhotosId implements Serializable {
+        private Long director;
+        private Long photos;
     }
 }
