@@ -85,18 +85,18 @@ public class MovieInfoResponseDTO {
     @NoArgsConstructor
     public static class PosterResponseDTO {
         private Long posterId;
-        private MovieEntity movie;
+        private String posterUrls;
 
         @Builder
-        public PosterResponseDTO(Long posterId, MovieEntity movie) {
+        public PosterResponseDTO(Long posterId, String posterUrls) {
             this.posterId = posterId;
-            this.movie = movie;
+            this.posterUrls = posterUrls;
         }
 
-        public static PosterResponseDTO fromEntity(MoviePostersEntity poster) {
+        public static PosterResponseDTO fromEntity(PostersEntity poster) {
             return PosterResponseDTO.builder()
                     .posterId(poster.getPosterId())
-                    .movie(poster.getMovie())
+                    .posterUrls(poster.getPosterUrls())
                     .build();
         }
     }
@@ -105,18 +105,18 @@ public class MovieInfoResponseDTO {
     @NoArgsConstructor
     public static class TrailerResponseDTO {
         private Long trailerId;
-        private MovieEntity movie;
+        private String trailerUrls;
 
         @Builder
-        public TrailerResponseDTO(Long trailerId, MovieEntity movie) {
+        public TrailerResponseDTO(Long trailerId, String trailerUrls) {
             this.trailerId = trailerId;
-            this.movie = movie;
+            this.trailerUrls = trailerUrls;
         }
 
-        public static TrailerResponseDTO fromEntity(MovieTrailersEntity trailer) {
+        public static TrailerResponseDTO fromEntity(TrailersEntity trailer) {
             return TrailerResponseDTO.builder()
                     .trailerId(trailer.getTrailerId())
-                    .movie(trailer.getMovie())
+                    .trailerUrls(trailer.getTrailerUrls())
                     .build();
         }
     }
@@ -143,21 +143,38 @@ public class MovieInfoResponseDTO {
 
     @Getter
     @NoArgsConstructor
+    public static class PhotoResponseDTO {
+        private Long photoId;
+        private String photoUrl;
+
+        @Builder
+        public PhotoResponseDTO(Long photoId, String photoUrl) {
+            this.photoId = photoId;
+            this.photoUrl = photoUrl;
+        }
+
+        public static PhotoResponseDTO fromEntity(PhotosEntity photos) {
+            return PhotoResponseDTO.builder()
+                    .photoId(photos.getPhotoId())
+                    .photoUrl(photos.getPhotoUrls())
+                    .build();
+        }
+    }
+
+    @Getter
+    @NoArgsConstructor
     public static class ActorsPhotosResponseDTO {
-        private Long actorPhotoId;
         private PhotosEntity photos;
         private ActorsEntity actors;
 
         @Builder
-        public ActorsPhotosResponseDTO(Long actorPhotoId, PhotosEntity photos, ActorsEntity actors) {
-            this.actorPhotoId = actorPhotoId;
+        public ActorsPhotosResponseDTO(PhotosEntity photos, ActorsEntity actors) {
             this.photos = photos;
             this.actors = actors;
         }
 
         public static ActorsPhotosResponseDTO fromEntity(ActorsPhotosEntity actorsPhotos) {
             return ActorsPhotosResponseDTO.builder()
-                    .actorPhotoId(actorsPhotos.getActorPhotoId())
                     .photos(actorsPhotos.getPhotos())
                     .actors(actorsPhotos.getActor())
                     .build();
@@ -167,23 +184,22 @@ public class MovieInfoResponseDTO {
     @Getter
     @NoArgsConstructor
     public static class DirectorsPhotosResponseDTO {
-        private Long directorPhotoId;
         private PhotosEntity photos;
         private DirectorsEntity directors;
 
         @Builder
-        public DirectorsPhotosResponseDTO(Long directorPhotoId, PhotosEntity photos, DirectorsEntity directors) {
-            this.directorPhotoId = directorPhotoId;
+        public DirectorsPhotosResponseDTO(PhotosEntity photos, DirectorsEntity directors) {
             this.photos = photos;
             this.directors = directors;
         }
 
         public static DirectorsPhotosResponseDTO fromEntity(DirectorsPhotosEntity directorsPhotos) {
             return DirectorsPhotosResponseDTO.builder()
-                    .directorPhotoId(directorsPhotos.getDirectorPhotoId())
                     .photos(directorsPhotos.getPhotos())
                     .directors(directorsPhotos.getDirector())
                     .build();
         }
     }
+
+
 }

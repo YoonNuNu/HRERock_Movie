@@ -13,6 +13,7 @@ import com.movie.rock.movie.data.repository.MovieFavorRepository;
 import com.movie.rock.movie.data.repository.MoviePostersRepository;
 import com.movie.rock.movie.data.repository.MovieRepository;
 import com.movie.rock.movie.data.request.MovieFavorRequestDTO;
+import com.movie.rock.movie.data.response.MovieDetailResponseDTO;
 import com.movie.rock.movie.data.response.MovieFavorResponseDTO;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
@@ -91,9 +92,9 @@ public class MovieFavorServiceImpl implements MovieFavorService {
         boolean isFavorite = isFavoritedBy(movieId, memNum);
         Long totalFavorCount = getTotalFavoritesCount(movieId);
 
-        Long posterId  = movie.getPoster().stream()
+        Long posterId = movie.getPoster().stream()
                 .findFirst()
-                .map(MoviePostersEntity::getPosterId)
+                .map(mp -> mp.getPosters().getPosterId())
                 .orElseThrow(PostersByMovieNotFoundException::new);
 
         return new MovieFavorResponseDTO(

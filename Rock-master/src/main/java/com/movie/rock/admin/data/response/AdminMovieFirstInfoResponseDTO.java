@@ -21,15 +21,15 @@ public class AdminMovieFirstInfoResponseDTO {
     private Integer openYear;
     private String movieRating;
     private String movieDescription;
-    private List<ActorResponseDTO> movieActors;
-    private List<DirectorResponseDTO> movieDirectors;
+    private List<ActorResponseDTO> movieActors; // ActorResponseDTO 배우관련 정보 불러옴
+    private List<DirectorResponseDTO> movieDirectors;  //DirectorResponseDTO 감독관련 정보 불러옴
 
 
     //생성자
     @Builder
     public AdminMovieFirstInfoResponseDTO(Long movieId, String movieTitle, List<GenreResponseDTO> movieGenres
-                                          , int runTime, Integer openYear, String movieRating, String movieDescription
-                                          , List<ActorResponseDTO>movieActors , List<DirectorResponseDTO> movieDirectors){
+            , int runTime, Integer openYear, String movieRating, String movieDescription
+            , List<ActorResponseDTO>movieActors , List<DirectorResponseDTO> movieDirectors){
         this.movieId = movieId;
         this.movieTitle = movieTitle;
         this.movieGenres =movieGenres;

@@ -3,6 +3,8 @@ package com.movie.rock.admin.data.response;
 
 import com.movie.rock.movie.data.entity.MovieEntity;
 import com.movie.rock.movie.data.entity.MovieFilmEntity;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO;
+import com.movie.rock.movie.data.response.MovieInfoResponseDTO.GenreResponseDTO;
 import com.movie.rock.movie.data.response.MovieInfoResponseDTO.PosterResponseDTO;
 import com.movie.rock.movie.data.response.MovieInfoResponseDTO.TrailerResponseDTO;
 import lombok.Builder;
@@ -25,7 +27,7 @@ public class AdminMovieSecondInfoResponseDTO {
     //생성자
     @Builder
     public AdminMovieSecondInfoResponseDTO(Long movieId,String movieTitle,List<TrailerResponseDTO> trailer
-                                           ,MovieFilmEntity movieFilm, List<PosterResponseDTO> poster){
+            ,MovieFilmEntity movieFilm, List<PosterResponseDTO> poster){
         this.movieId = movieId;
         this.movieTitle = movieTitle;
         this.trailer = trailer;
@@ -40,15 +42,15 @@ public class AdminMovieSecondInfoResponseDTO {
                 .movieTitle(movieEntity.getMovieTitle())
                 .trailer(movieEntity.getTrailer().stream()
                         .map(movieTrailer -> TrailerResponseDTO.builder()
-                                .trailerId(movieTrailer.getTrailerId())
-                                .movie(movieTrailer.getMovie())
+                                .trailerId(movieTrailer.getTrailers().getTrailerId())
+                                .trailerUrls(movieTrailer.getTrailers().getTrailerUrls())
                                 .build())
                         .collect(Collectors.toList()))
                 .movieFilm(movieEntity.getMovieFilm())
                 .poster(movieEntity.getPoster().stream()
                         .map(moviePoster-> PosterResponseDTO.builder()
-                                .posterId(moviePoster.getPosterId())
-                                .movie(moviePoster.getMovie())
+                                .posterId(moviePoster.getPosters().getPosterId())
+                                .posterUrls(moviePoster.getPosters().getPosterUrls())
                                 .build())
                         .collect(Collectors.toList()))
                 .build();
