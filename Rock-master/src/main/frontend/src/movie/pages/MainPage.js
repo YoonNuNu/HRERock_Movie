@@ -20,27 +20,45 @@ function MainPage() {
 
     useEffect(() => {
         if (!initializedRef.current) {
-
             initializedRef.current = true;
-
-            const urlParams = new URLSearchParams(window.location.search);
-
-            const token = urlParams.get('token');
-
-            const loginMethod = urlParams.get('loginMethod');
+            const hash = window.location.hash.substring(1);
+            const params = new URLSearchParams(hash);
+            const token = params.get('token');
+            const loginMethod = params.get('loginMethod');
 
             if (token && loginMethod) {
                 localStorage.setItem('accessToken', token);
-
                 localStorage.setItem('loginMethod', loginMethod);
-
-                window.history.replaceState({}, document.title, "/"); // URL 클리닝
-
+                // URL에서 해시 제거
+                window.history.replaceState({}, document.title, window.location.pathname + window.location.search);
+                fetchMemberInfo();
             }
-
-            fetchMemberInfo();
         }
     }, []);
+
+    // useEffect(() => {
+    //     if (!initializedRef.current) {
+    //
+    //         initializedRef.current = true;
+    //
+    //         const urlParams = new URLSearchParams(window.location.search);
+    //
+    //         const token = urlParams.get('token');
+    //
+    //         const loginMethod = urlParams.get('loginMethod');
+    //
+    //         if (token && loginMethod) {
+    //             localStorage.setItem('accessToken', token);
+    //
+    //             localStorage.setItem('loginMethod', loginMethod);
+    //
+    //             window.history.replaceState({}, document.title, "/"); // URL 클리닝
+    //
+    //         }
+    //
+    //         fetchMemberInfo();
+    //     }
+    // }, []);
 
     // async function fetchMemberInfo() {
     //

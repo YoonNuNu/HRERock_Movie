@@ -53,7 +53,7 @@ public class SecurityConfig {
                 )
                 .oauth2Login(oauth2Login -> oauth2Login
                         .loginPage("/auth/login") // OAuth2 로그인페이지 ( 구글 )
-                        .defaultSuccessUrl("http://localhost:3000/oauth2/redirect", true)
+                        .defaultSuccessUrl("http://localhost:3000/", true)
                         .userInfoEndpoint(userInfoEndpoint -> userInfoEndpoint.userService(customOAuth2UserService)) // OAuth2 사용자 정보 처리 서비스
                         .successHandler(oAuth2LoginSuccessHandler) // OAuth2 로그인 성공 핸들러
                 );
