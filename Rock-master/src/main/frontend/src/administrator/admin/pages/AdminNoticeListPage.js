@@ -1,15 +1,15 @@
-import {useEffect, useRef, useState} from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import axios from 'axios';
-import {Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import "../../../common/css/AdminNoticeListPage.css";
 
-
-// css
-import "../../../common/css/AdminNoticeListPage.css"
-
-function AdminNoitceListPage() {
-
+function AdminNoticeListPage() {
     const [isLoading, setIsLoading] = useState(true);
     const [hasPermission, setHasPermission] = useState(false);
+    const [boardList, setBoardList] = useState([]);
+    const [currentPage, setCurrentPage] = useState(0);
+    const [totalPages, setTotalPages] = useState(0);
+    const [searchKeyword, setSearchKeyword] = useState('');
     const navigate = useNavigate();
     const initializedRef = useRef(false);
 
@@ -30,7 +30,7 @@ function AdminNoitceListPage() {
                 setHasPermission(true);
             } else {
                 alert("권한이 없습니다.");
-                navigate('/');
+                navigate('/Login');
             }
         } catch (error) {
             console.error('Error fetching user info:', error);
@@ -41,132 +41,138 @@ function AdminNoitceListPage() {
         }
     };
 
+    const loadBoardList = async (page = 0) => {
+        try {
+            const response = await axios.get('/admin/boardList', {
+                params: { page, size: 10, sort: 'boardId,DESC' }
+            });
+            setBoardList(response.data.content);
+            setTotalPages(response.data.totalPages);
+            setCurrentPage(page);
+        } catch (error) {
+            console.error('Error fetching boards:', error);
+            alert('목록을 불러오는 중 오류가 발생했습니다.');
+        }
+    };
+
+    const searchBoards = async () => {
+        if (!searchKeyword.trim()) {
+            loadBoardList(0); // 검색어가 없을 경우 전체 목록을 불러옴
+            return;
+        }
+        try {
+            const response = await axios.get('/admin/boardSearch', {
+                params: {
+                    page: 0,
+                    size: 10,
+                    sort: 'boardId,DESC',
+                    boardTitle: searchKeyword,
+                    boardContent: searchKeyword
+                }
+            });
+            setBoardList(response.data.content);
+            setTotalPages(response.data.totalPages);
+            setCurrentPage(0);
+        } catch (error) {
+            console.error('Error searching boards:', error);
+            alert('검색 중 오류가 발생했습니다.');
+        }
+    };
+
+    const deleteSelectedPosts = async () => {
+        const selectedBoards = Array.from(document.querySelectorAll('input[name="selectedBoards"]:checked')).map(board => board.value);
+        if (selectedBoards.length > 0) {
+            try {
+                await axios.delete('/admin/listdelete', { data: selectedBoards });
+                alert('선택한 게시물들이 삭제되었습니다.');
+                loadBoardList(currentPage);
+            } catch (error) {
+                console.error('게시물 삭제 오류:', error);
+                alert('게시물 삭제 중 오류가 발생했습니다.');
+            }
+        } else {
+            alert('삭제할 게시물을 선택하세요.');
+        }
+    };
+
     useEffect(() => {
         if (!initializedRef.current) {
             initializedRef.current = true;
             checkPermission();
         }
+        loadBoardList();
     }, []);
 
-    // if (isLoading) {
-    //     return <div>Loading...</div>;
-    // }
-
-    if (!hasPermission) {
-        return null; // 또는 권한 없음 메시지를 표시할 수 있습니다.
+    if (isLoading) {
+        return <div>Loading...</div>;
     }
 
-
+    if (!hasPermission) {
+        return null;
+    }
 
     return (
-        <>
+        <div className="body">
 
-        <div className="admin_notice_div">
-            {/* <!-- 공지사항 제목 --> */}
-            <div className="admin_notice_haed">
-                <h2>공지사항</h2>
-            </div>
-            <div className="notice_link">
-                <span><Link to="/user/Notice" className='black'>자세히 보러 가기 {'>'}</Link></span>
-            </div>
-
-            <div className="admin_notice_list_menu">
-                <ul className="admin_notice_list_ul">
-                    <li>번호</li>
-                    <li>제목</li>
-                    <li>날짜</li>
-                </ul>
-            </div>
-            {/* <!-- 공지사항 리스트 --> */}
-            <div className="admin_notice_list">
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-                <ul className="admin_notice_list_ul">
-                    <li>10</li>
-                    <li><Link to="/user/Notive/View" className='black'>공지사항 1</Link></li>
-                    <li>2024.06.26</li>
-                </ul>
-            </div>
-            <div className="admin_notice_page">
-                <ul className="admin_notice_page_ul">
-                    <li>&lt;</li>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>&gt;</li>
-                </ul>
-
+            <div className="main">
+                <div className="admin_notice_div">
+                    <div className="admin_notice_head">
+                        <h2>공지사항</h2>
+                    </div>
+                    <div className="search-container">
+                        <input
+                            type="text"
+                            value={searchKeyword}
+                            onChange={e => setSearchKeyword(e.target.value)}
+                            placeholder="제목 검색..."
+                        />
+                        <button onClick={searchBoards}>검색</button>
+                    </div>
+                    <div className="admin_notice_list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="selectAllBoards" /></th>
+                                    <th>번호</th>
+                                    <th>공지</th>
+                                    <th>제목</th>
+                                    <th>날짜</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {boardList.map((board, index) => (
+                                    <tr key={board.boardId}>
+                                        <td><input type="checkbox" name="selectedBoards" value={board.boardId} /></td>
+                                        <td>{index + 1}</td>
+                                        <td>{board.notice ? '공지' : ''}</td>
+                                        <td><Link to={`/user/Notice/${board.boardId}`} className="board-title-link">{board.boardTitle}</Link></td>
+                                        <td>{board.modifyDate}</td>
+                                        <td>{board.boardViewCount}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <button onClick={() => navigate('/admin/Notice/Write')}>글쓰기</button>
+                        <button onClick={deleteSelectedPosts}>선택한 글 삭제</button>
+                    </div>
+                    <div id="pagination" className="pagination">
+                        {Array.from({ length: totalPages }, (_, i) => (
+                            <button
+                                key={i}
+                                className={i === currentPage ? 'active' : ''}
+                                onClick={() => loadBoardList(i)}
+                            >
+                                {i + 1}
+                            </button>
+                        ))}
+                    </div>
+                </div>
             </div>
         </div>
-
-        </>
-
-
-
-
-
     );
-
 }
 
-
-
-
-
-
-
-
-
-
-
-export default AdminNoitceListPage;
+export default AdminNoticeListPage;

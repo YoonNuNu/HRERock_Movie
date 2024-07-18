@@ -41,19 +41,19 @@ function App() {
                     {/* main hedaer 공유 페이지 */}
                 <Route path="/" element={<CustomerOutlet />} >
                     <Route index path="/" element={<MainPage />} />
-                    <Route path="/user/MoviePage" element={<MoviePage />} />
+                    <Route path="/user/MoviePage/:movieId" element={<MoviePage />} />
                     <Route path="/user/MoviePlay" element={<MoviePlayPage />} />
                     <Route path="/MovieSearch" element={<MovieSearch />} />
                     <Route path="/user/MyPage" element={<MyPage />} />
                     <Route path='/user/Notice' element={<NoticeListPage />}  />
-                    <Route path='/user/Notive/View' element={<NoticeViewPage />}  />
+                    <Route path='/user/Notice/:boardId' element={<NoticeViewPage />}  />
                     <Route path='/admin/Notice/Write' element={<NoticeWritetPage />}  />
 
                 </Route>
                 
                 <Route element={<AdminOutlet />} >
                     {/* admin header 공유 페이지 */}
-                    <Route path="admin/Notice" element={<AdminNoticeListPage  />}  />
+                    <Route path="/admin/Notice" element={<AdminNoticeListPage  />}  />
                     <Route path="admin/MovieList" element={<AdminMovieListPage  />}  />
                     <Route path="admin/MovieUpload" element={<AdminMovieUploadPage  />}  />
                     <Route path="admin/MovieUploadFile" element={<AdminMovieUploadFilePage  />}  />
